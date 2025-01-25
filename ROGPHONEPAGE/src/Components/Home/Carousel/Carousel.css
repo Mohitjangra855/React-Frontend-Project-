@@ -1,0 +1,62 @@
+.slick-slide>div{
+    margin: 0px 10px;
+}
+/* In your m.css or a separate custom CSS file */
+.slick-dots li button:before {
+    color: rgb(73, 73, 73); /* Inactive dot color */
+  }
+  
+  .slick-dots li.slick-active button:before {
+    color: rgb(235, 11, 30); /* Active dot color */
+  }
+  .slick-prev:before {
+    color: red;
+    font-size: 4rem;
+    position: absolute;
+    left: -4vw;
+    top: -1vw;
+  }
+  .slick-next:before{
+    color: red;
+    font-size: 4rem;
+    right: -4vw;
+    top: -1vw;
+  
+  }
+  @media (max-width:800px) {
+    .slick-prev:before {
+      color: red;
+      font-size: 2rem;
+      position: absolute;
+      left: -4vw;
+      top: -1vw;
+    }
+    .slick-next:before{
+      color: red;
+      font-size: 2rem;
+      right: -4vw;
+      top: -1vw;
+    
+    } 
+  }
+  @media (max-width:762px) {
+    .slick-prev:before {
+      color: red;
+      font-size: 2rem;
+      position: absolute;
+      left: 12vw;
+      top: 1vw;
+      
+      display: none;
+    }
+    .slick-next:before{
+      
+      position: absolute;
+      color: red;
+      font-size: 2rem;
+      right: 12vw;
+      display: none;
+      top: 1vw;
+    
+    } 
+  }
